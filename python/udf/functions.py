@@ -1,5 +1,4 @@
 import sys
-#from pyspark.sql import SparkSession,SQLContext
 
 def square(s):
   return s * s
