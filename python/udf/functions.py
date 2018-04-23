@@ -4,15 +4,6 @@ import sys
 def square(s):
   return s * s
 
-#def process(argv):
-  #spark = SparkSession.builder.appName("PythonUDF").getOrCreate()
-  #sc = spark.sparkContext
-  #sqlContext = SQLContext(spark.sparkContext)
-  #sqlContext.range(1, 4).registerTempTable("test")
-  #do_sql(spark,sqlContext)
-  #do_df(spark,sqlContext)
-  #do_sql_scala(spark,sqlContext)
-
 def do_sql(spark,sqlContext):
   print "Calling Python UDF with SQL"
   sqlContext.udf.register("squareWithPython", square)
