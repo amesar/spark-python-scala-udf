@@ -1,5 +1,4 @@
-package org.andre.udf
-
+package com.databricks.solutions.udf
 import org.apache.spark.sql.SQLContext
 
 object Functions {

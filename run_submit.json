@@ -1,0 +1,17 @@
+{
+  "run_name": "python-scala-udf-job",
+  "new_cluster": {
+    "spark_version": "5.3.x-scala2.11",
+    "node_type_id": "i3.xlarge",
+    "num_workers": 1
+  },
+  "libraries": [
+    { "egg": "dbfs:/tmp/jobs/python-scala-udf-job/spark_python_scala_udf-0.0.1-py2.7.egg"},
+    { "jar": "dbfs:/tmp/jobs/python-scala-udf-job/spark-python-scala-udf_2.11-0.0.1-SNAPSHOT.jar" }
+  ],
+  "timeout_seconds": 3600,
+  "spark_python_task": {
+    "python_file": "dbfs:/tmp/jobs/python-scala-udf-job/main.py"
+  }
+}
+
