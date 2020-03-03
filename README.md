@@ -4,9 +4,9 @@ Demonstrates calling a Spark Scala UDF from Python with an EGG and a JAR.
 * Using spark-submit.
 * Using Databricks REST API endpoint [jobs/runs/submit](https://docs.databricks.com/api/latest/jobs.html#runs-submit).
 
-Prerequities:
+Prerequisites:
 * Spark 2.4.2
-* Python 2.7
+* Python 2.7 or above
 * Scala 2.11.8
 * curl
 
